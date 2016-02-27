@@ -1,0 +1,139 @@
+h1.header {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+body {
+    line-height: 1.7em;
+    color: #f0f0f0;
+    font-size: 13px;
+    background: #262d3f;
+}
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu {
+    background: #f59363;
+}
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    /*border-bottom: none;*/
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #a1f9b1;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.home-menu .pure-menu-heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+.splash-container {
+    background: #afdacc;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: #de846c;
+    border: 3px solid #de846c;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.rest {
+    position: absolute;
+    width: 100%;
+    top: 88%;
+    left: 0;
+}
+
+/* This is the class used for the dark-background areas. */
+.ribbon {
+    background: #2d3e50;
+    color: #2d3e50;
+}
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+}
+
+input[type=text] {
+    color: #333;
+}
+
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {
+        font-size: 300%;
+    }
+}
+
+.content-container {
+    width: 50em;
+    background: #fefefe;
+    color: #262d3f;
+    padding: 2em;
+    margin: 5em auto;
+
+}
+
+.content-container > table {
+    width: 46em;
+}
+
+th {
+    color: #de846c;
+    background: #afdacc;
+}
